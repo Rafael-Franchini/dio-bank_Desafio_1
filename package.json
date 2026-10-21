@@ -1,0 +1,14 @@
+{
+  "name": "dio-bank",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run build && node dist/app.js",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test tests/*.test.cjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
